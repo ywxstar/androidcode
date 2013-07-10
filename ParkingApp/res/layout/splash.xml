@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+ 	android:layout_height="fill_parent"
+ 	android:gravity="center"
+ 	android:weightSum="1">
+    
+    <Button 
+        android:layout_width="wrap_content" 
+        android:text="" 
+        android:id="@+id/button1" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="0" >
+    </Button> 
+
+	<LinearLayout 
+ 		android:orientation="vertical"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="fill_parent"
+ 		android:gravity="center"
+ 		android:weightSum="1">
+    
+	    <TextView 
+	        android:layout_width="wrap_content" 
+	        android:text="" 
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/textView3" 
+	        android:layout_weight="0.10"></TextView>
+	    
+	    <TextView 
+	        android:id="@+id/textView1" 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content" 
+	        android:text="@string/app_name" 
+	        android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+	    
+	    <ProgressBar
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content" 
+	        style="?android:attr/progressBarStyleLarge" 
+	        android:id="@+id/progressBar1">
+	    </ProgressBar>
+	    
+	    <TextView 
+	        android:id="@+id/textView4" 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content"  
+	        android:textAppearance="?android:attr/textAppearanceMedium">
+	    </TextView>
+    
+	</LinearLayout>
+	
+</LinearLayout> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+     
+	<FrameLayout 
+	    android:id="@+id/framelayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="400dp">
+	    
+	    <com.ywx.parkingapp.view.GestureDetectorViewFlipper 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/viewflipper"> 
+	        
+	        <ImageView
+	            android:id="@+id/imageview1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/pic1"
+	            android:clickable="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"/>
+	          
+	        <ImageView
+		        android:id="@+id/imageview2"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/pic2"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	         
+	        <ImageView
+		        android:id="@+id/imageview3"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/pic3"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	            
+	        <ImageView
+		        android:id="@+id/imageview4"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/pic4"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	        <ImageView
+		        android:id="@+id/imageview5"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/pic5"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	    </com.ywx.parkingapp.view.GestureDetectorViewFlipper >
+	    
+	    <LinearLayout 
+	        android:id="@+id/radio_root"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="300dp"
+	        android:layout_gravity="center_horizontal">
+
+	        <include
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            layout="@layout/home_foot_bar" />
+	        
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/framelayout"
+	    android:layout_marginTop="20dp"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="20dp"
+	        android:background="#ff00ff00"
+	        android:text="log in" />
+
+	    <Button
+	        android:id="@+id/signin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="2dp" 
+	        android:layout_marginRight="20dp"
+	        android:background="#ff00ff00"
+	        android:text="sign in" />
+	</LinearLayout>
+
+</LinearLayout>
