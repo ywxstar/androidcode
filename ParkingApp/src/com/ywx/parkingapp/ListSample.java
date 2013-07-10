@@ -15,7 +15,7 @@ import android.widget.SimpleAdapter;
 
 public class ListSample extends Activity {
 
-	
+	// sdfgsdfgsfdg
 	public final static String ITEM_TITLE = "title";
 	public final static String ITEM_CAPTION = "caption";
 
