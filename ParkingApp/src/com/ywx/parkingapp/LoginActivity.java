@@ -20,6 +20,7 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -91,6 +92,20 @@ public class LoginActivity extends Activity{
 		return true;
 	}
 	
+	 
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		// TODO Auto-generated method stub
+		//return super.onMenuItemSelected(featureId, item);
+		Intent intent = new Intent(LoginActivity.this, AppSetting.class);
+		startActivity(intent);
+		overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);
+		return true;
+	}
+
+
+
+
 	class LoginTask extends AsyncTask<String, Void, String>{
  
 		private ProgressDialog pDialog;

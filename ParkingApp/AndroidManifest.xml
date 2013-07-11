@@ -53,6 +53,10 @@
             android:name="com.ywx.parkingapp.LearnMore"
             android:label="learn more"> 
         </activity>
+        
+        <activity
+            android:name="com.ywx.parkingapp.AppSetting"
+            android:label="Setting"/>
             
     </application>
 

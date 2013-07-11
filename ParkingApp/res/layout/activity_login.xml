@@ -17,20 +17,22 @@
     <LinearLayout
         android:id="@+id/user_btn"
         android:layout_width="fill_parent"
-        android:layout_height="180dp"  
+        android:layout_height="138dp"  
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="#aacecece"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        android:padding="0.5dp" >
 	   
         
         <EditText
 	        android:id="@+id/etusername" 
-			android:textColor="#ff0000cc"
+			android:textColor="#410757"
 			android:textSize="13sp"
 	        android:layout_width="fill_parent"
-	        android:layout_height="45dp" 
-	        android:layout_marginLeft="20dp"
-	        android:layout_marginRight="20dp"
+	        android:layout_height="45dp"  
 	        android:padding="10dp" 
 			android:background="#fafafa"        
 	        android:ems="10"
@@ -42,19 +44,15 @@
      
         <TextView 
             android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-	        android:layout_marginRight="20dp" 
+            android:layout_height="1dp" 
 			android:background="#dddddd"   />
         
 	    <EditText
 	        android:id="@+id/etpassword"
 	        android:layout_width="fill_parent"
 	        android:layout_height="45dp" 
-			android:textColor="#fafafa"
-			android:textSize="13sp"
-	        android:layout_marginLeft="20dp"
-	        android:layout_marginRight="20dp" 
+			android:textColor="#410757"
+			android:textSize="13sp"  
 			android:background="#fafafa"   
 	        android:padding="10dp"
 	        android:ems="10" 
@@ -65,17 +63,13 @@
 	    
 	    <TextView 
             android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-	        android:layout_marginRight="20dp" 
+            android:layout_height="1dp"  
 			android:background="#dddddd"   />
         
 	    <LinearLayout 
 	        android:layout_width="fill_parent"
 	        android:layout_height="45dp"
-	        android:orientation="horizontal"
-	        android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+	        android:orientation="horizontal" 
             android:background="#fafafa">
 	        
 	        <Button
@@ -84,11 +78,10 @@
 	            android:layout_height="45dp" 
 	            android:layout_weight="1"
 	            android:onClick="ToLearnMore"
-	            android:background="#fafafa"
-	            android:padding="3dp"
+	            android:background="#fafafa" 
 	            android:text="@string/LearnMore"
-	            android:textColor="#cccccc" 
-	            android:textSize="13sp"/>
+	            android:textColor="#b6a1b8" 
+	            android:textSize="14sp"/>
 	        
 			<TextView 
 	            android:layout_width="1dp"
@@ -102,8 +95,8 @@
 	            android:background="#fafafa"
 	            android:padding="3dp"
 	            android:text="@string/Login"
-	            android:textColor="#cccccc" 
-	            android:textSize="13sp"/>
+	            android:textColor="#bc18eb" 
+	            android:textSize="15sp"/>
 	        
 	    </LinearLayout>
        
@@ -115,8 +108,9 @@
         android:id="@+id/textview"
         android:layout_width="200dp"
         android:layout_height="40dp" 
+        android:layout_marginTop="40dp"
         android:text="or log in by using"
-        android:textColor="#ffaa33bb" 
+        android:textColor="#ffafaaaa" 
         android:layout_gravity="center_horizontal"/>
     
     
@@ -135,22 +129,23 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:background="#f7f2f2"
+            android:background="#d5f6c5"
             android:padding="3dp"
             android:text="fackbook"
-            android:textColor="#cccccc" />
+            android:textColor="#a673c1" />
 	    
 	    <Button
 	        android:id="@+id/twitter_login"
 	        android:layout_marginLeft="20dp"
 	        android:layout_marginRight="20dp"
-			android:textColor="#cccccc"
+			android:textColor="#3cc1f8"
 	        android:layout_width="match_parent"
 	        android:layout_height="45dp"
 	        android:layout_marginTop="20dp"
 	        android:padding="3dp"
-	        android:background="#f7f2f2"
+	        android:background="#dff6ff"
 	        android:text="Twitter" />
+	    
    	</LinearLayout>
 
 </LinearLayout>
