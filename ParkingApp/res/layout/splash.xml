@@ -60,21 +60,21 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
      
-	<FrameLayout 
+	<FrameLayout
 	    android:id="@+id/framelayout"
-	    android:layout_width="match_parent"
-	    android:layout_height="400dp">
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
 	    
 	    <com.ywx.parkingapp.view.GestureDetectorViewFlipper 
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
 	        android:id="@+id/viewflipper"> 
 	        
 	        <ImageView
 	            android:id="@+id/imageview1"
 	            android:layout_width="match_parent"
 	            android:layout_height="match_parent"
-	            android:src="@drawable/pic1"
+	            android:src="#ffff00"
 	            android:clickable="true"
 	            android:layout_alignParentLeft="true"
 	            android:layout_alignParentTop="true"/>
@@ -83,7 +83,7 @@
 		        android:id="@+id/imageview2"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
-		        android:src="@drawable/pic2"
+		        android:src="#ff00ff"
 		        android:layout_alignParentLeft="true"
 		        android:layout_alignParentTop="true" />
 	         
@@ -91,7 +91,7 @@
 		        android:id="@+id/imageview3"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
-		        android:src="@drawable/pic3"
+		        android:src="#ccaa00"
 		        android:layout_alignParentLeft="true"
 		        android:layout_alignParentTop="true" />
 	        
@@ -100,7 +100,7 @@
 		        android:id="@+id/imageview4"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
-		        android:src="@drawable/pic4"
+		        android:src="#aa00bb"
 		        android:layout_alignParentLeft="true"
 		        android:layout_alignParentTop="true" />
 	        
@@ -108,7 +108,7 @@
 		        android:id="@+id/imageview5"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
-		        android:src="@drawable/pic5"
+		        android:src="#0000ff"
 		        android:layout_alignParentLeft="true"
 		        android:layout_alignParentTop="true" />
 	        
@@ -118,7 +118,7 @@
 	        android:id="@+id/radio_root"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content" 
-	        android:layout_marginTop="300dp"
+	        android:layout_marginTop="20dp"
 	        android:layout_gravity="center_horizontal">
 
 	        <include
@@ -127,36 +127,40 @@
 	            layout="@layout/home_foot_bar" />
 	        
 	    </LinearLayout>
-	    
+
 	</FrameLayout>
 	
 	<LinearLayout
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:layout_below="@+id/framelayout"
-	    android:layout_marginTop="20dp"
-	    android:orientation="horizontal" >
-
-	    <Button
-	        android:id="@+id/login"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:layout_marginBottom="5dp"
-	        android:layout_marginLeft="20dp"
-	        android:background="#ff00ff00"
-	        android:text="log in" />
-
-	    <Button
-	        android:id="@+id/signin"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:layout_marginBottom="5dp"
-	        android:layout_marginLeft="2dp" 
-	        android:layout_marginRight="20dp"
-	        android:background="#ff00ff00"
-	        android:text="sign in" />
-	</LinearLayout>
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:orientation="horizontal" 
+		    android:layout_marginTop="-100dp">
+	
+		    <Button
+		        android:id="@+id/login"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_weight="1"
+		        android:textSize="11sp"
+		        android:textColor="#cccccc"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="20dp"
+		        android:background="#faf1f1"
+		        android:text="log in" />
+	
+		    <Button
+		        android:id="@+id/signin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_weight="1"
+		        android:textSize="11sp"
+		        android:textColor="#cccccc"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="2dp" 
+		        android:layout_marginRight="20dp"
+		        android:background="#faf1f1"
+		        android:text="sign in" />
+		</LinearLayout>
+	
 
 </LinearLayout>
