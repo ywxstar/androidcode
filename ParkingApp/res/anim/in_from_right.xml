@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromXDelta="102%p"
+    android:toXDelta="0%p"
+    android:interpolator="@android:anim/overshoot_interpolator"
+    />
+
+<!--     <rotate  -->
+<!--         xmlns:android="http://www.android.com/apk/res/android" -->
+<!--         android:fromDegrees="180" -->
+<!--         android:toDegrees="540" -->
+<!--         android:duration="10000" -->
+<!--         android:pivotX="0" -->
+<!--         android:pivotY="0" -->
+<!--         android:interpolator="@android:anim/overshoot_interpolator"/> -->
+
+<!-- <alpha -->
+<!--     xmlns:android="http://www.android.com/apk/res/android" -->
+<!--     android:duration="5000" -->
+<!--     android:fromAlpha="0.0" -->
+<!--     android:toAlpha="1.0" -->
+<!--     android:interpolator="@android:anim/overshoot_interpolator"/> -->
+
+<!-- <scale -->
+<!--     xmlns:android="http://www.android.com/apk/res/android" -->
+<!--     android:duration="3000" -->
+<!--     android:fromXScale="0.1" -->
+<!--     android:toXScale="1.0" -->
+<!--     android:fromYScale="0.1" -->
+<!--     android:toYScale="1.0" -->
+<!--     android:pivotX="50%" -->
+<!--     android:pivotY="50%" -->
+<!--     android:interpolator="@android:anim/overshoot_interpolator"/> -->
