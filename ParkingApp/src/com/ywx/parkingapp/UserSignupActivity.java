@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.security.MessageDigest;
 import java.sql.Date;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.HttpResponse;
@@ -14,16 +15,22 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONObject;
+ 
 
 import android.app.Activity; 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log; 
 import android.view.Menu;
 import android.view.View; 
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;  
+import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
 
 public class UserSignupActivity extends Activity{
 	
@@ -32,6 +39,17 @@ public class UserSignupActivity extends Activity{
 	EditText txtPasswordc = null;
 	Button reg_btn = null;
 	ImageView return_btn = null;
+	
+	String[] menu_name_array = { "搜索", "文件管理", "下载管理", "全屏", "网址",
+			"书签", "加入书签", "分享页面", "退出", "夜间模式", "刷新", "关闭" };
+	int[] menu_image_array = { R.drawable.menu_search,
+			R.drawable.menu_filemanager, R.drawable.menu_downmanager,
+			R.drawable.menu_fullscreen, R.drawable.menu_inputurl,
+			R.drawable.menu_bookmark, R.drawable.menu_bookmark_sync_import,
+			R.drawable.menu_sharepage, R.drawable.menu_quit,
+			R.drawable.menu_nightmode, R.drawable.menu_refresh,
+			R.drawable.menu_more };
+     GridView menuGrid;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) { 
@@ -51,9 +69,48 @@ public class UserSignupActivity extends Activity{
 	
 	
 	public void GetBack(View getback){
-		UserSignupActivity.this.setResult(RESULT_OK);
-		UserSignupActivity.this.finish();
+		//UserSignupActivity.this.setResult(RESULT_OK);
+		//UserSignupActivity.this.finish();
+		//openDialog();
+	
 	}
+		
+/*	public void openDialog() {
+		  
+		View menuView = View.inflate(this, R.layout.gridview_menu, null);
+		
+		// 创建AlertDialog
+		final AlertDialog menuDialog = new AlertDialog.Builder(this).create();
+		menuDialog.setView(menuView);
+		menuGrid = (GridView) menuView.findViewById(R.id.gridview);
+		menuGrid.setAdapter(getMenuAdapter(menu_name_array, menu_image_array));
+		menuGrid.setOnItemClickListener(new OnItemClickListener() {
+		 
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				if (arg2 == 11) {
+					menuDialog.cancel();
+				}
+			}
+		});
+		menuDialog.show();
+	}
+
+	private ListAdapter getMenuAdapter(String[] menuNameArray,
+			int[] menuImageArray) {
+		ArrayList<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
+		for (int i = 0; i < menuNameArray.length; i++) {
+			HashMap<String, Object> map = new HashMap<String, Object>();
+			map.put("itemImage", menuImageArray[i]);
+			map.put("itemText", menuNameArray[i]);
+			data.add(map);
+		}
+		SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
+				R.layout.item_menu, new String[] { "itemImage", "itemText" },
+				new int[] { R.id.item_image, R.id.item_text });
+		return simperAdapter;
+	
+	}*/
 	
 	 public void CreateUser(View button) {
 		  

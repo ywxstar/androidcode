@@ -1,7 +1,6 @@
-package com.ywx.parkingapp;
+package com.ywx.parkingapp; 
 
-import com.handmark.pulltorefresh.library.PullToRefreshWebView;
-
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.Action;
 import com.markupartist.android.widget.ActionBar.IntentAction;
@@ -11,13 +10,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.ListView;
 
 public class LearnMore extends Activity{
 
-	PullToRefreshWebView mPullRefreshWebView;
-	WebView mWebView;
+	PullToRefreshListView mPullRefreshWebView;
+	ListView list_view;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +32,9 @@ public class LearnMore extends Activity{
         actionBar.addAction(shareAction); 
 	    
         ///////////////////////////////////////////////////////////
-        mPullRefreshWebView = (PullToRefreshWebView) findViewById(R.id.pull_refresh_webview);
-		mWebView = mPullRefreshWebView.getRefreshableView();
+        mPullRefreshWebView = (PullToRefreshListView) findViewById(R.id.pull_refresh_webview);
+		list_view = mPullRefreshWebView.getRefreshableView();
 
-		mWebView.getSettings().setJavaScriptEnabled(true);
-		mWebView.setWebViewClient(new SampleWebViewClient());
-		mWebView.loadUrl("http://www.baidu.com");
 	}
 	
 	
@@ -58,13 +53,6 @@ public class LearnMore extends Activity{
 	        return Intent.createChooser(intent, "Share");
 	    }
 	    
-	    private static class SampleWebViewClient extends WebViewClient {
-			@Override
-			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				view.loadUrl(url);
-				return true;
-			}
-		}
 	
 
 }

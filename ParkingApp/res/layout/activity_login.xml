@@ -132,7 +132,8 @@
             android:background="#d5f6c5"
             android:padding="3dp"
             android:text="fackbook"
-            android:textColor="#a673c1" />
+            android:textColor="#a673c1" 
+            android:onClick="AppSetting"/>
 	    
 	    <Button
 	        android:id="@+id/twitter_login"

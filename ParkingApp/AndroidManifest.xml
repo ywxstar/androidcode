@@ -57,6 +57,16 @@
         <activity
             android:name="com.ywx.parkingapp.AppSetting"
             android:label="Setting"/>
+        
+        <activity
+            android:name="com.ywx.parkingapp.AboutActivity" 
+            android:label="About"/>
+        
+        <activity
+            android:name="com.ywx.parkingapp.UserProfile"
+            android:label="UserProfile"/>
+        
+        
             
     </application>
 

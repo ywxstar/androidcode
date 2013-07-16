@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="#ffffffff"
+        android:paddingLeft="15dp"
+        android:text="System Setting"
+        android:textColor="#3d3d3d"
+        />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#4a4a4a"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e2e2e2" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+             
+        <!-- user profile -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="138dp"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="Profile"
+                android:textColor="#9b9b9b"
+                android:paddingLeft="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:orientation="vertical"
+                android:padding="1dp">
+	          
+                <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#ffffff">
+	            
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp"
+               			
+		                android:layout_weight="1"
+		                android:text="User name"
+		                android:textColor="#3d3d3d"
+		                android:paddingLeft="20dp"/>
+		           <!--  android:paddingBottom="14dp" -->
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+		                android:layout_weight="1"
+		                android:text="your name"
+		                android:textColor="#9b9b9b"
+		                android:paddingLeft="20dp"/>
+	            
+	        	</LinearLayout>
+	        	
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+		            android:background="#cacaca"/>
+                
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+                		android:paddingLeft="20dp"
+		                android:layout_weight="1"
+		                android:text="Country"
+		                android:textColor="#3d3d3d"/>
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="45dp"
+		                android:layout_weight="1"
+		                android:paddingTop="14dp" 
+		                android:text="China"
+		                android:textColor="#9b9b9b"
+		                android:paddingLeft="20dp"/>
+	        	</LinearLayout> 
+	        	
+        	</LinearLayout> 
+        </LinearLayout>
+        
+        <!-- Twitter  --> 
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="Twitter"
+                android:textColor="#9b9b9b"
+                android:paddingLeft="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:orientation="vertical"
+                android:padding="1dp">
+	            
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+	            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+                		android:paddingLeft="20dp"
+		                android:layout_weight="15"
+		                android:text="Login with Twitter"
+		                android:textColor="#3d3d3d"/>
+		            
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:layout_weight="1" > 
+		                <CheckBox 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center"
+			                style="@style/MyCheckBox"
+		                /> 
+		            </LinearLayout>
+		             
+	        	</LinearLayout> 
+        	</LinearLayout> 
+        	
+        </LinearLayout>
+        
+        
+        <!-- Facebook -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="138dp"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="Facebook"
+                android:textColor="#9b9b9b"
+                android:paddingLeft="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:orientation="vertical"
+                android:padding="1dp">
+	            
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+	            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+                		android:paddingLeft="20dp"
+		                android:layout_weight="15"
+		                android:text="Login with Facebook"
+		                android:textColor="#3d3d3d"/>
+		            
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:layout_weight="1">
+		                <CheckBox 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center"
+			                style="@style/MyCheckBox"
+		                />
+		            </LinearLayout>
+	        	</LinearLayout>  
+	        	
+	        	<TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+		            android:background="#cacaca"/>
+	        	
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+	            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+                		android:paddingLeft="20dp"
+		                android:layout_weight="15"
+		                android:text="Publish on Timeline"
+		                android:textColor="#3d3d3d"/>
+		             
+		             <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:layout_weight="1">
+		                <CheckBox 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center"
+			                android:checked="false"
+			                style="@style/MyCheckBox"/>
+		            </LinearLayout>
+	        	</LinearLayout>  
+	        	 
+        	</LinearLayout> 
+        	
+        </LinearLayout>
+        
+        
+        <!-- General Settings -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="General Settings"
+                android:textColor="#9b9b9b"
+                android:paddingLeft="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:orientation="vertical"
+                android:padding="1dp">
+	            
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+	            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:paddingTop="14dp" 
+                		android:paddingLeft="20dp"
+		                android:layout_weight="15"
+		                android:text="Country"
+		                android:textColor="#3d3d3d"/>
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:layout_weight="1">
+		                <CheckBox 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center"
+			                android:checked="false"
+			                style="@style/MyCheckBox"/>
+		            </LinearLayout>
+	            
+	        	</LinearLayout> 
+        	</LinearLayout> 
+        	
+        </LinearLayout>
+        
+        <!--  about   -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="About"
+                android:textColor="#9b9b9b"
+                android:paddingLeft="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"
+                android:orientation="vertical"
+                android:padding="1dp">
+	            
+	        	<LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:background="#fafafa">
+	            
+		            <TextView
+		                android:id="@+id/about"
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="#fafafa"
+		                android:paddingTop="14dp" 
+		                android:layout_marginLeft="10dp"
+		                android:layout_weight="1" 
+		                android:textColor="#000"
+		                android:text="About" /> 
+	            
+	        	</LinearLayout> 
+        	</LinearLayout> 
+        	
+        </LinearLayout>
+        
+       
+        
+        </LinearLayout>
+        
+    </ScrollView>
+    
+
+</LinearLayout>

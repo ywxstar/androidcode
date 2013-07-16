@@ -23,7 +23,7 @@ public class AboutActivity extends Activity{
         actionBar.setHomeAction(new IntentAction(this, createIntent(this), R.drawable.getback));
         actionBar.setTitle("About");
 
-        final Action shareAction = new IntentAction(this, createShareIntent(), R.drawable.multlist);
+        final Action shareAction = new IntentAction(this, null, R.drawable.multlist);
         actionBar.addAction(shareAction); 
 	}
 	
@@ -40,6 +40,7 @@ public class AboutActivity extends Activity{
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, "Shared from the ActionBar widget.");
         return Intent.createChooser(intent, "Share");
+
     }
 
 	

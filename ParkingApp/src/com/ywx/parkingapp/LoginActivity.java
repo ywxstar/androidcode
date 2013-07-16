@@ -58,7 +58,7 @@ public class LoginActivity extends Activity{
 		submit.setOnClickListener( new OnClickListener(){
 			@Override
 			public void onClick(View v){
-				String username = uname.getText().toString();
+				/*String username = uname.getText().toString();
 				String password = passwd.getText().toString();
 				
 				if(username.equals("") == true && password.equals("") == true){
@@ -69,8 +69,11 @@ public class LoginActivity extends Activity{
 					Toast.makeText(LoginActivity.this, "please input user password!", 1000).show();
 				}else{
 					new LoginTask().execute();
-				}
+				}*/
 				
+				Intent intent = new Intent(LoginActivity.this, UserProfile.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);
 				
 			}
 		});
@@ -83,6 +86,11 @@ public class LoginActivity extends Activity{
 		overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);
 	}
 	
+	public void AppSetting(View view){
+		Intent intent = new Intent(LoginActivity.this, AppSetting.class);
+		startActivity(intent);
+		overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);
+	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu){
@@ -97,13 +105,22 @@ public class LoginActivity extends Activity{
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		// TODO Auto-generated method stub
 		//return super.onMenuItemSelected(featureId, item);
+		/*Intent intent = new Intent(LoginActivity.this, AppSetting.class);
+		startActivity(intent);
+		overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);*/
+		return true;
+	}
+	
+	
+	@Override
+	public boolean onMenuOpened(int featureId, Menu menu) {
+		// TODO Auto-generated method stub
+		//return super.onMenuOpened(featureId, menu);
 		Intent intent = new Intent(LoginActivity.this, AppSetting.class);
 		startActivity(intent);
 		overridePendingTransition(R.anim.in_from_right, R.anim.out_from_left);
-		return true;
+		return false;
 	}
-
-
 
 
 	class LoginTask extends AsyncTask<String, Void, String>{
