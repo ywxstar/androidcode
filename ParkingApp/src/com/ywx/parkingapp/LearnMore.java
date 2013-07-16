@@ -14,7 +14,7 @@ import android.widget.ListView;
 
 public class LearnMore extends Activity{
 
-	PullToRefreshListView mPullRefreshWebView;
+	PullToRefreshListView mPullRefreshListView;
 	ListView list_view;
 	
 	@Override
@@ -32,8 +32,8 @@ public class LearnMore extends Activity{
         actionBar.addAction(shareAction); 
 	    
         ///////////////////////////////////////////////////////////
-        mPullRefreshWebView = (PullToRefreshListView) findViewById(R.id.pull_refresh_webview);
-		list_view = mPullRefreshWebView.getRefreshableView();
+        mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_listview);
+		list_view = mPullRefreshListView.getRefreshableView();
 
 	}
 	

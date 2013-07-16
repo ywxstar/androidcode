@@ -10,8 +10,8 @@
         style="@style/ActionBar"
     />
     
-     <com.ywx.android_pulltorefreshlistview_library.PullToRefreshListView
-       android:id="@+id/pull_refresh_webview"
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+       android:id="@+id/pull_refresh_listview"
        android:layout_height="fill_parent"
        android:layout_width="fill_parent"/>
     
